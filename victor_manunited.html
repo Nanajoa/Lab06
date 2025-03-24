@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Red Legacy - Manchester United</title>
+    <style>
+        :root {
+            --primary-red: #DA291C;
+            --secondary-black: #000000;
+            --accent-gold: #FFD700;
+            --light-bg: #F5F5F5;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background-color: var(--light-bg);
+            color: var(--secondary-black);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Hero Section */
+        .hero {
+            background-color: var(--primary-red);
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        .hero-content h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        /* Timeline */
+        .timeline {
+            border-left: 4px solid var(--primary-red);
+            padding-left: 20px;
+        }
+
+        .timeline-item {
+            margin-bottom: 30px;
+            padding: 15px;
+            background-color: white;
+            border-left: 4px solid var(--accent-gold);
+        }
+
+        /* Player Cards */
+        .player-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .player-card {
+            background-color: white;
+            border: 2px solid var(--primary-red);
+            padding: 15px;
+            text-align: center;
+        }
+
+        /* Trophy Cabinet */
+        .trophy-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            gap: 20px;
+        }
+
+        .trophy-item {
+            background-color: white;
+            padding: 15px;
+            text-align: center;
+            border: 2px solid var(--accent-gold);
+        }
+
+        /* Gallery */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+        }
+
+        .gallery-placeholder {
+            background-color: var(--primary-red);
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 50px;
+            text-align: center;
+        }
+
+        /* Social Media Links */
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .social-links a {
+            color: var(--primary-red);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .gallery, .player-grid, .trophy-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container hero-content">
+            <h1>Red Legacy</h1>
+            <p>Welcome to the home of legends. Dive into the rich history and electrifying present of Manchester United.</p>
+        </div>
+    </section>
+
+    <!-- Club History Timeline -->
+    <section class="container">
+        <h2>📜 Club History Timeline</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <h3>1878: Club Founded</h3>
+                <p>Newton Heath LYR Football Club established, which later became Manchester United.</p>
+            </div>
+            <div class="timeline-item">
+                <h3>1958: Busby Babes</h3>
+                <p>Legendary team that tragically lost players in the Munich air disaster.</p>
+            </div>
+            <div class="timeline-item">
+                <h3>1999: Treble Winners</h3>
+                <p>Historic season winning Premier League, FA Cup, and UEFA Champions League.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Current Squad Highlights -->
+    <section class="container">
+        <h2>🔥 Current Squad Highlights</h2>
+        <div class="player-grid">
+            <div class="player-card">
+                <h3>Bruno Fernandes</h3>
+                <p>Midfielder | #18 | Portuguese</p>
+                <span>🏆 Team Captain</span>
+            </div>
+            <div class="player-card">
+                <h3>Marcus Rashford</h3>
+                <p>Forward | #10 | English</p>
+                <span>⚽ Top Goal Scorer</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trophy Cabinet -->
+    <section class="container">
+        <h2>🥇 Trophy Cabinet</h2>
+        <div class="trophy-grid">
+            <div class="trophy-item">
+                <h3>Premier League</h3>
+                <p>13 Titles</p>
+            </div>
+            <div class="trophy-item">
+                <h3>Champions League</h3>
+                <p>3 Titles</p>
+            </div>
+            <div class="trophy-item">
+                <h3>FA Cup</h3>
+                <p>12 Titles</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- United Chants -->
+    <section class="container">
+        <h2>🎶 United Chants</h2>
+        <blockquote>
+            "Glory, Glory Man United,<br>
+            Glory, Glory Man United,<br>
+            Glory, Glory Man United,<br>
+            And the Reds go marching on, on, on!"
+        </blockquote>
+    </section>
+
+    <!-- Fan Corner -->
+    <section class="container">
+        <h2>💬 Fan Corner</h2>
+        <blockquote>
+            "Some people are born to play football, others just watch and appreciate." - Sir Alex Ferguson
+        </blockquote>
+    </section>
+
+    <!-- Gallery -->
+    <section class="container">
+        <h2>📸 Gallery</h2>
+        <div class="gallery">
+            <div class="gallery-placeholder">Manchester United Celebration</div>
+            <div class="gallery-placeholder">Old Trafford Stadium</div>
+            <div class="gallery-placeholder">Team Huddle</div>
+        </div>
+    </section>
+
+    <!-- Merchandise Teaser -->
+    <section class="container">
+        <h2>🔴 Merchandise</h2>
+        <div class="player-grid">
+            <div class="player-card">
+                <h3>Home Kit</h3>
+                <p>Classic Red</p>
+            </div>
+            <div class="player-card">
+                <h3>Away Kit</h3>
+                <p>White & Gray</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Connect Section -->
+    <section class="container">
+        <h2>🌍 Connect with Us</h2>
+        <div class="social-links">
+            <a href="https://www.facebook.com/manchesterunited">Facebook</a>
+            <a href="https://twitter.com/ManUtd">Twitter</a>
+            <a href="https://www.instagram.com/manchesterunited">Instagram</a>
+        </div>
+    </section>
+
+    <script>
+        // Simple scroll animation for timeline
+        document.addEventListener('DOMContentLoaded', function() {
+            const timelineItems = document.querySelectorAll('.timeline-item');
+            
+            const observerOptions = {
+                threshold: 0.1
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('in-view');
+                    }
+                });
+            }, observerOptions);
+
+            timelineItems.forEach(item => {
+                observer.observe(item);
+            });
+        });
+    </script>
+</body>
+</html>
