@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Team</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;
+            --background-color: #ecf0f1;
+            --text-color: #333;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: var(--background-color);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            line-height: 1.6;
+        }
+
+        .container {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 2rem;
+            width: 100%;
+            max-width: 500px;
+        }
+
+        h1 {
+            color: var(--primary-color);
+            text-align: center;
+            margin-bottom: 1.5rem;
+        }
+
+        .team-list {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .team-member {
+            margin-bottom: 1rem;
+        }
+
+        .team-member a {
+            text-decoration: none;
+            color: var(--secondary-color);
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        .team-member a:hover {
+            color: var(--primary-color);
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Our Team</h1>
+        <ul id="teamList" class="team-list">
+        </ul>
+    </div>
+
+    <script>
+        const teamMembers = [
+            { name: 'Victor Ako-Adounvo', link: 'john-doe.html' },
+	    { name: 'Papa Yaw Badu', link: 'john-doe.html' },
+	    { name: 'Kobina Coleman', link: 'john-doe.html' },
+            { name: 'Kelsey Goli', link: 'jane-smith.html' },
+            { name: 'Yenma Abambire Bawa', link: 'personal-website.html' }, 
+            // Add more team members easily
+        ];
+
+        // Function to populate team list
+        function populateTeamList() {
+            const teamList = document.getElementById('teamList');
+            
+            teamMembers.forEach(member => {
+                const listItem = document.createElement('li');
+                listItem.className = 'team-member';
+                
+                const memberLink = document.createElement('a');
+                memberLink.href = member.link;
+                memberLink.textContent = member.name;
+                
+                listItem.appendChild(memberLink);
+                teamList.appendChild(listItem);
+            });
+        }
+
+        // Populate the team list when page loads
+        window.onload = populateTeamList;
+    </script>
+</body>
+</html>
