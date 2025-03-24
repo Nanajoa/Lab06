@@ -2,10 +2,10 @@
 
 ## Team Members:
 - Yenma Abambire Bawa
-- Victor
-- Papa Yaw
-- Kelsey
-- Kobina
+- Victor Nene Obahii Kwablah Ako-Aduonvo
+- Papa Yaw Nantwi Badu
+- Kelsey Goli
+- Kobina Kyereboah-Coleman
 
 ## Project Description:
 A simple static website for practicing Git & GitHub workflows. Includes a landing page and personal profile pages for each team member.
