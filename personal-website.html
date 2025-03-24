@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yenma Abambire Bawa</title>
+    <style>
+        :root {
+            --primary-color: #1a1a2e;
+            --secondary-color: #e94560;
+            --background-color: #f5f6fa;
+            --text-color: #2f3640;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.8;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 2rem 0;
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 2.5rem 0;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 0.3rem;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            letter-spacing: 1px;
+        }
+
+        section {
+            background-color: white;
+            margin: 2rem 0;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        section h2 {
+            color: var(--secondary-color);
+            border-bottom: 2px solid var(--secondary-color);
+            padding-bottom: 0.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .contact-links {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .contact-links a {
+            text-decoration: none;
+            color: var(--primary-color);
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        .contact-links a:hover {
+            color: var(--secondary-color);
+        }
+
+        ul li {
+            margin-bottom: 0.8rem;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                width: 95%;
+                padding: 1rem;
+            }
+
+            section {
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Yenma Abambire Bawa</h1>
+            <p>Developer | Poet | Founder of Zenforia & Unwind</p>
+        </div>
+    </header>
+
+    <div class="container">
+        <section id="about">
+            <h2>About Me</h2>
+            <p>
+                I’m Yenma Abambire Bawa, a driven and versatile junior Computer Science student at Ashesi University, Ghana, with a strong passion for blending technology, creativity, and innovation. I specialize in full-stack web development, data structures, and software engineering, with experience in languages such as JavaScript, PHP, HTML, CSS, Python, and R.
+
+		Beyond my technical expertise, I am a writer, poet, and entrepreneur, dedicated to creating impactful solutions and meaningful art. I am the founder of Zenforia, an aesthetics brand focused on candle-making and curating serene environments, and I am currently developing Unwind, a mental health wellness app aimed at promoting student well-being. Additionally, I’m working on launching Eunoia, a care and gift package business rooted in self-care and empowerment.
+
+		My projects reflect my commitment to merging technical skills with real-world applications, whether it's developing platforms like Ayera, a lost-and-found web platform for students, or engaging in mental health research on the effectiveness of wellness apps in reducing stress.
+
+		I believe in continuous growth, leadership, and using both my analytical and creative strengths to leave a positive mark in every space I occupy.
+            </p>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <ul>
+                <li><strong>Unwind</strong>: Mental health wellness app focused on student well-being.</li>
+                <li><strong>Zenforia</strong>: Candle & aesthetics brand promoting serenity & creativity.</li>
+                <li><strong>Ayera</strong>: Lost & Found platform for university students.</li>
+                <li><strong>Pally</strong>: Transport-finding platform with backend CRUD features.</li>
+                <li><strong>Recipedia</strong>: Recipe-sharing web platform.</li>
+            </ul>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Info</h2>
+            <div class="contact-links">
+                <a href="mailto:yenma.bawa@ashesi.edu.gh@gmail.com">School mail</a>
+		<a href="mailto:abambirebawayenma@gmail.com">Personal business Email</a>
+                <a href="https://www.linkedin.com/in/yenma-abambire-bawa-576754263/" target="_blank">LinkedIn</a>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        document.querySelectorAll('section h2').forEach(heading => {
+            heading.addEventListener('mouseover', (e) => {
+                e.target.style.color = 'var(--secondary-color)';
+            });
+            heading.addEventListener('mouseout', (e) => {
+                e.target.style.color = '';
+            });
+        });
+    </script>
+</body>
+</html>
