@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kelsey Goli</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #16a085;
+            --background-color: #ecf0f1;
+            --text-color: #34495e;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.8;
+        }
+
+        .container {
+            width: 85%;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 2rem 0;
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+        }
+
+        header h1 {
+            font-size: 2.8rem;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            letter-spacing: 1px;
+        }
+
+        section {
+            background-color: white;
+            margin: 2rem 0;
+            padding: 1.8rem;
+            border-radius: 12px;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        section h2 {
+            color: var(--secondary-color);
+            border-bottom: 2px solid var(--secondary-color);
+            padding-bottom: 0.4rem;
+            margin-bottom: 1rem;
+        }
+
+        .contact-links {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .contact-links a {
+            text-decoration: none;
+            color: var(--primary-color);
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        .contact-links a:hover {
+            color: var(--secondary-color);
+        }
+
+        ul li {
+            margin-bottom: 0.8rem;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                width: 95%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Kelsey Goli</h1>
+            <p>Computer Scientist</p>
+        </div>
+    </header>
+
+    <div class="container">
+        <section id="about">
+            <h2>About Me</h2>
+            <p>
+                I’m Kelsey Goli, a passionate third-year Computer Science student with a keen interest in technology, and innovation. My work spans areas such as AI, software development, and sports technology.
+            </p>
+            <p>
+                My projects also include *Elevate Sports*, a platform designed to streamline sports management in schools. Beyond research, I enjoy exploring AI applications in generative models, such as StyleGAN2-ADA fine-tuning, and trying to creating a model that will determine how to improve the VAR system in Football.
+            </p>
+            <p>
+                I believe in leveraging technology to solve real-world problems, bridging the gap between data and practical applications. My curiosity drives me to explore the latest advancements in computer science, from chip architectures to AI innovations.
+            </p>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <ul>
+                <li><strong>Elevate Sports</strong>: A digital platform for managing school sports teams and athlete engagement.</li>
+                <li><strong>StyleGAN2-ADA Fine-Tuning</strong>: Researching and implementing generative image fine-tuning in PyTorch.</li>
+                <li><strong>ConcertConnect</strong>: A platform that enhances concert experiences by connecting fans and artists.</li>
+                <li><strong>VAR Improvement Model</strong>: Developing enhancements for the Video Assistant Referee system in soccer.</li>
+            </ul>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Info</h2>
+            <div class="contact-links">
+                <a href="mailto:ksgoli02@gmail.com">Personal Email</a>
+                <a href="https://www.linkedin.com/in/kelsey-goli/" target="_blank">LinkedIn</a>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
